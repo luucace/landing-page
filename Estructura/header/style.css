@@ -355,10 +355,37 @@ footer span{
 
 @media (max-width: 515px) {
 
-    
+
     .dias {
-    font-size: 14px;
-    padding: 0 5px;
+    font-size: 12px;
+    padding: 10px 0;
+    
     }
     
 }
+
+
+@media (max-width: 425px) {
+    }
+
+    .info-titulo h1,
+    .info-titulo p{
+        align-content: center;
+        margin: 10px;
+    }
+    .info-img {
+        border: none;
+        ;
+    }
+
+
+    .dias {
+        font-weight: 600;
+    }
+    .dias-info h3{
+        font-size: 18px;
+        
+    }
+}
+
+
