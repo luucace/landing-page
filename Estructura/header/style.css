@@ -519,13 +519,15 @@ display: flex;
     }
 }
 
+
+
 @media (max-width: 515px) {
 
 
     .dias {
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px 0;
-    
+        
     }
     
     .footer-links {
@@ -561,6 +563,7 @@ display: flex;
 
     .dias-menu {
         font-size: 14px;
+
     }
 
 
