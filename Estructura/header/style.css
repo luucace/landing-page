@@ -9,8 +9,18 @@
     list-style-type: none;
 }
 
+:root {
+    --primary: #f58c31; 
+    --secondary: #c4214c;
+    --third: #c61b6a;
+    --text:  antiquewhite;
+    --max-widht: 1200px;
+
+}
+
+
 .header {
-    background: linear-gradient( #f58c31, black);
+    background: linear-gradient( var(--primary), black);
     position: fixed;
     width: 100%;
     display: flex;
@@ -59,16 +69,17 @@
 
 body {
     background-color: black;
-}
+    
+} 
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    color: antiquewhite;
-    max-width: 1200px;
+    color: var(--text);
+    max-width: var(--max-widht);
 
 }
 
@@ -85,8 +96,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     gap: 40px;
     padding: 30px;
+    margin: 40px;
 }
 
 .info-titulo {
@@ -99,7 +112,7 @@ main{
 }
 
 .info-titulo h1 {
-        background-image: linear-gradient(#f58c31, #c4214c);
+        background-image: linear-gradient(var(--primary), var(--secondary));
         color: transparent;
         background-clip: text;
         font-size: 40px;
@@ -110,7 +123,7 @@ main{
     font-size: 18px;
     font-weight: 600;
     padding: 20px;
-    background-image: linear-gradient(#f58c31, #c4214c);
+    background-image: linear-gradient(var(--primary), var(--secondary));
     color: transparent;
     background-clip: text;
 }
@@ -121,8 +134,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: 
-    #f58c31;
+    background-color: var(--primary);
 }
 
 .info-img img {
@@ -157,7 +169,7 @@ main{
     font-weight: 600;
     padding: 0 10px;
     color: transparent;
-    background-image: linear-gradient(#f58c31,#c61b6a);
+    background-image: linear-gradient(var(--primary),var(--secondary));
     background-clip: text;
 }
 
@@ -168,7 +180,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color:#f58c31;
+    background-color:var(--primary);
 }
 
 .dias-info {
@@ -178,12 +190,12 @@ main{
     justify-content: center;
     gap: 20px;
     color: transparent;
-    background-image: linear-gradient(#c4214c,#c61b6a);
+    background-image: linear-gradient(var(--secondary),var(--third));
     background-clip: text;
     font-size: 18px;
 }
 .dias-info button{
-    color: #c4214c;
+    color: var(--secondary);
     background-color: black;
     border-radius: 10px;
     padding: 0 10px;
@@ -231,7 +243,7 @@ h2{
     align-content: center;
     gap: 70px;
     color: transparent;
-    background-image: linear-gradient(#c4214c,#f58c31 );
+    background-image: linear-gradient(var(--secondary), var(--primary));
     background-clip: text;
 }
 
@@ -240,7 +252,7 @@ h2{
     flex-direction:column;
     gap: 100px;
     color: transparent;
-    background-image: radial-gradient(#c4214c,#c61b6a);
+    background-image: radial-gradient(var(--secondary),var(--third));
     background-clip: text;
 }
 .promo-img {
@@ -252,7 +264,7 @@ h2{
 /* Footer contactos */
 
 footer {
-    color: #f58c31;
+    color: var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +274,7 @@ footer {
 }
 footer p,
 footer a {
-color: #f58c31;
+color: var(--primary);
 font-weight: 300;
 font-size: 14px;
 }
@@ -286,7 +298,7 @@ footer span{
 /* carrito */
 .cart {
     position: absolute;
-    background:linear-gradient(to top, black, #f58c31) ;
+    background:linear-gradient(to top, black, var(--primary)) ;
     padding: 20px;;;
     top: 65px;
     right: 0;
@@ -313,7 +325,7 @@ footer span{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 1px solid #c61b6a;
+    border: 1px solid var(--third);
     padding: 20px;
     border-radius: 10px;
     
@@ -339,7 +351,7 @@ footer span{
 }
 
 .item-precio {
-    background: linear-gradient(to right, #c4214c, #c61b6a);
+    background: linear-gradient(to right, var(--secondary), var(--third));
     background-clip: text;
     color: transparent;
     font-size: 16px;
@@ -362,23 +374,23 @@ footer span{
 }
 
     .up {
-        border: 1px solid #c61b6a;
+        border: 1px solid var(--secondary);
     }
 
     .down {
-        background-color: #f58c31;
-        border: 1px solid #c61b6a;
+        background-color: var(--primary);
+        border: 1px solid var(--third);
     }
 
     .divider {
-        border: .5px solid #c61b6a;
+        border: .5px solid var(--third);
     }
     
     .cart-total {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: antiquewhite;
+        color: var(--text);
     }
     .cart-total p,
     .cart-total span{
@@ -395,6 +407,6 @@ footer span{
     }
 
     #cart-toggle:checked + .cart{
-display: flex;
+        display: flex;
     }
 
