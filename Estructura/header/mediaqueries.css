@@ -1,0 +1,171 @@
+/* Mediaqueries */
+/* tablets */
+@media (max-width: 1024px) {
+
+    /* header menu */
+    .navbar {
+        gap: 30px;
+    }
+
+    .links {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        flex-direction: column;
+        width: 90%;
+        background-color: black;
+        border: 2px solid #c61b6a;
+        border-top: 0;
+        border-radius: 0px 0px 15px 15px;
+        padding: 45px 0;
+        display: none;
+}
+
+    .link-list a {
+
+    font-size: 1.2rem;
+    }
+    
+    .menu-label {
+        display: flex;
+        order: 2;
+
+    }
+
+    /* pseudoclass */
+
+    #menu-toggle:checked + .links {
+        display: flex;
+    }
+
+    .info-img {
+        border: 1px solid red;
+        background-image: linear-gradient(#f58c31, #c4214c);
+        color: transparent;
+        background-clip: text;
+        padding: 10px 0;
+
+    }
+    #Semana {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 80%;
+        }
+    
+    #Semana h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .dias {
+        border: 1px solid red;
+        background-image: linear-gradient(#f58c31, #c4214c);
+        color: transparent;
+        background-clip: text;
+        max-width: 30%;
+        height: 550px; 
+        
+    }
+
+
+    .dias-menu img {
+        max-width: 50%;
+    }
+
+
+
+    .promo-info {
+        border: 1px solid red;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px; 
+        margin: 0 30px; 
+        height: 100%;
+        font-size: 14px;
+        
+    }
+
+    .promo-info h2{
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .promo-img img {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    
+    .cart {
+        width: 100%;
+        left: 0;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+    .titulo {
+        flex-wrap: wrap;
+        
+    }
+
+    .info-titulo h1 { 
+    padding: 0 50px;
+    }
+}
+
+
+
+@media (max-width: 515px) {
+
+
+    .dias {
+    font-size: 13px;
+    padding: 10px 0;
+        
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+
+    .info-titulo h1,
+    .info-titulo p{
+        align-content: center;
+        margin: 0 50px;
+    }
+    .info-img {
+        border: none;
+    }
+
+
+    .dias {
+        font-weight: 600;
+        margin: 10px;
+        
+    }
+    .dias-info h3{
+        font-size: 18px;
+    
+    }
+    
+
+    .dias-menu {
+        font-size: 14px;
+
+    }
+
+
+}
+
