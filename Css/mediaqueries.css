@@ -30,7 +30,11 @@
     .menu-label {
         display: flex;
         order: 2;
+    }
 
+    .barra-menu {
+        color: var(--text);
+        font-size: 18px;
     }
 
     /* pseudoclass */
@@ -171,4 +175,3 @@
 
 
 }
-

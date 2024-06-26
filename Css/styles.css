@@ -64,7 +64,12 @@
     font-weight: 600;
 }
 
-
+/* carrito */
+.carrito {
+    color: var(--text);
+    font-size: 18px;
+    cursor: pointer;
+}
 /* Titulo, Section inicio */
 
 body {
@@ -409,4 +414,3 @@ footer span{
     #cart-toggle:checked + .cart{
         display: flex;
     }
-
