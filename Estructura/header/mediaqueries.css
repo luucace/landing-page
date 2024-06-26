@@ -101,13 +101,17 @@
 
 @media (max-width: 720px) {
     
-    .cart {
+    .dias-info {
+        flex-direction: column;
+    }
+    .dias-menu {
         width: 100%;
         left: 0;
     }
 
-    .cart-item {
-        flex-wrap: wrap;
+    .dias-menu {
+        flex-direction: column;
+        
     }
     .titulo {
         flex-wrap: wrap;
@@ -122,7 +126,6 @@
 
 
 @media (max-width: 515px) {
-
 
     .dias {
     font-size: 13px;
